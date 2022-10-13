@@ -24,8 +24,8 @@
     --small-font-size: .813rem;
   
     /*========== Font weight ==========*/
-    --font-medium: 500;
-    --font-semi-bold: 600;
+    --font-normal: 400;
+    --font-bold: 700;
   
     /*========== z index ==========*/
     --z-tooltip: 10;
@@ -42,8 +42,111 @@
     }
   }
 
-*{
+  /* ============= base ============== */
+*, *::after,*::before{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--body-font);
+    font-weight: var(--font-normal);
+    background-color: var(--neutral-color-light);
+    color: var(--primary-color);
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1, h2, h3{
+    font-weight: var(--font-bold);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+section{
+    padding: 3.5rem 0rem 2rem;
+}
+
+.container {
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+
+/* ============= header and nav =============== */
+.header{
+    width: 100%;
+    margin-top: .7rem;
+    margin-bottom: 2rem;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--header-height);
+}
+
+.nav-logo-img{
+    width: 5rem;
+}
+
+.nav-toggle{
+    font-size: var(--small-font-size);
+    width: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-toggle > a{
+    color: var(--primary-color);
+}
+.nav-toggle > a:hover {
+    color: var(--accent-color-bright);
+}
+
+/* ============ home =============== */
+.home-content{
+    display: grid;
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.home-title{
+    font-size: 1.6rem;
+    font-weight: var(--font-bold);
+}
+
+.home-input > input{
+    padding: .8rem 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color);
+}
+.home-input > input::placeholder {
+    color: var(--neutral-color-gray);
+}
+
+form > .home-btn{
+    color: white;
+    background-color: var(--accent-color-bright);
+    font-size: var(--font-normal);
+    border: none;
 }

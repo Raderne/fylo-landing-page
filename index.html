@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav class="container">
-            <a href="#" class="logo">
-                <img class="logo-img" src="./images/logo.svg" alt="logo">
+    <header class="header">
+        <nav class="container nav">
+            <a href="#" class="nav-logo">
+                <img class="nav-logo-img" src="./images/logo.svg" alt="logo">
             </a>
 
-            <div>
+            <div class="nav-toggle">
                 <a href="#features">Features</a>
                 <a href="#team">Team</a>
                 <a href="#SignIn">Sign in</a>
@@ -24,7 +24,7 @@
     </header>
 
     <main>
-        <section class="container">
+        <section class="container grid">
             <img src="./images/illustration-1.svg" alt="" class="home-img">
 
             <div class="home-content">
@@ -32,10 +32,10 @@
                 <p class="home-description">
                     Fylo secure your most important files in one secure location. Access them wherever you need, share and collaborate with friends, family, co-workers.
                 </p>
-                <div class="home-input">
-                    <input type="email" name="email" id="email" placeholder="Enter your email..">
-                    <button class="home-btn btn">Get Started</button>
-                </div>
+                <form class="home-input grid">
+                    <input class="email-input" type="email" placeholder="Enter your email..">
+                    <input class="home-btn btn" type="submit" value="Get Started">
+                </form>
             </div>
         </section>
     </main>
