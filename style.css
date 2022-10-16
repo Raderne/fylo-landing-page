@@ -10,7 +10,7 @@
     --accent-color-bright: hsl(224, 93%, 58%);
     --accent-color-moderate: hsl(170, 45%, 43%);
 
-    --neutral-color-light: hsl(240, 75%, 98%);
+    --neutral-color-light: hsl(240, 20%, 99%);
     --neutral-color-gray: hsl(0, 0%, 75%);
   
     /*========== Font and typography ==========*/
@@ -78,7 +78,7 @@ img {
 }
 
 section{
-    padding: 3.5rem 0rem 2rem;
+    padding: 3.5rem 0rem 3rem;
 }
 
 .container {
@@ -89,6 +89,12 @@ section{
 .grid{
     display: grid;
     gap: 1.5rem;
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
 }
 
 /* ============= header and nav =============== */
@@ -149,4 +155,17 @@ form > .home-btn{
     background-color: var(--accent-color-bright);
     font-size: var(--font-normal);
     border: none;
+}
+
+/* ================= Content =============== */
+.background{
+    background: url(./images/bg-curve-mobile.svg) center;
+    background-repeat: no-repeat;
+    background-size: 120rem 62rem;
+    background-clip: content-box;
+    margin: 0;
+}
+.content-data{
+    margin-top: 4rem;
+    gap: 4rem;
 }
