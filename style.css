@@ -18,7 +18,7 @@
     --body-font: 'Open Sans', sans-serif;
     --heading-font: 'Raleway', sans-serif;
     --h1-font-size: 1.5rem;
-    --h2-font-size: 1.1rem;
+    --h2-font-size: 1.25rem;
     --h3-font-size: 1rem;
     --normal-font-size: .938rem;
     --small-font-size: .813rem;
@@ -37,7 +37,7 @@
       --h1-font-size: 2.25rem;
       --h2-font-size: 1.5rem;
       --h3-font-size: 1.25rem;
-      --normal-font-size: 1rem;
+      --normal-font-size: 1.1rem;
       --small-font-size: .875rem;
     }
   }
@@ -70,6 +70,7 @@ a{
 
 h1, h2, h3{
     font-weight: var(--font-bold);
+    font-family: var(--heading-font);
 }
 
 img {
@@ -250,3 +251,190 @@ form > .home-btn{
 }
 
 /* ============== bottom section =============== */
+.bottom-bg{
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary-color-desaturated);
+}
+
+.bottom-section{
+    text-align: center;
+    color: #fff;
+}
+
+.access-title{
+    font-size: var(--h2-font-size);
+    margin-bottom: 1.2rem;
+}
+.access-info{
+    color: var(--neutral-color-gray);
+    font-size: var(--normal-font-size);
+}
+
+.access-input{
+    align-self: center;
+    justify-self: center;
+    gap: 8px;
+}
+.access-input > input {
+    padding: .7rem;
+    width: 245px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    overflow: hidden;
+}
+.access-input > input:nth-child(1){
+    font-size: .7rem;    
+    color: rgb(235, 231, 231);
+}
+.access-input > input:nth-child(2){
+    cursor: pointer;
+    font-size: var(--small-font-size);
+    transition: .3s ease;
+}
+.access-input > input:nth-child(2):hover{
+    background-color: var(--primary-color);
+}
+
+/* =================== footer ================= */
+footer{
+    background-color: var(--primary-color);
+    color: var(--neutral-color-light);
+}
+
+.footer-logo{
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(212deg) brightness(103%) contrast(104%);
+}
+
+.contacts{
+    row-gap: .85rem;
+}
+.contact{
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-normal);
+    flex-direction: row;
+    column-gap: 1rem;
+    align-items: center;
+}
+.contact > i{
+    font-size: 1.2rem;
+}
+
+.part1,
+.part2{
+    row-gap: .7rem;
+}
+
+.link:hover{
+    cursor: pointer;
+    color: var(--primary-color-desaturated);
+}
+
+.socials{
+    flex-direction: row;
+    column-gap: 1rem;
+    justify-self: center;
+    align-self: center;
+}
+.social{
+    display: inline-flex;
+    color: var(--neutral-color-light);
+    border: 1px solid var(--neutral-color-light);
+    border-radius: 50%;
+    width: 32px; height: 32px;
+    justify-content: center;
+    align-items: center;
+    transition: .3s ease-out;
+}
+.social:hover
+{
+    color: var(--primary-color-desaturated);
+    border: 1px solid var(--primary-color-desaturated);
+    transform: scale(1.1);
+}
+
+/* ================= for big devices 1440px =================== */
+@media (min-width: 968px) {
+    .container{
+        margin-right: 4.9rem;
+        margin-left: 4.9rem;
+    }
+
+    /* ================= vav ================= */
+    .header{
+        margin-top: 2rem;
+    }
+    .nav-logo-img{
+        width: 9rem;
+    }
+    .nav-toggle{
+        width: 280px;
+    }
+    .nav-toggle > a{
+        font-size: var(--normal-font-size);
+    }
+
+    /* ============== home =============== */
+    .home{
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 2rem;
+    }
+    .home-img{
+        order: 2;
+    }
+
+    .home-content{
+        text-align: left;
+        align-content: center;
+    }
+    .home-title{
+        font-size: var(--h1-font-size);
+        line-height: 1.3;
+        font-weight: 700;
+    }
+    .home-description{
+        font-size: var(--normal-font-size);
+    }
+
+    .home-input
+    {
+        grid-template-columns: 2fr 1fr;
+        width: 500px;
+    }
+
+    /* =============== content =============== */
+    .content-data{
+        grid-template-columns: 53% auto;
+        margin-top: 0;
+    }
+    .content-img{
+        order: 2;
+    }
+
+    .content-title{
+        text-align: left;
+        font-size: var(--h1-font-size);
+    }
+    .content-description{
+        margin-bottom: 1rem;
+    }
+    .content-link{
+        align-self: baseline;
+    }
+
+    .card{
+        align-self: baseline;
+        width: 360px; height: 224px;
+        padding: 1.75rem;
+        padding-bottom: 1rem;
+    }
+    .card .card-details{
+        margin-bottom: 1rem;
+    }
+    .card-user{
+        margin-top: 1.5rem;
+    }
+
+
+}
