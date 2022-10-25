@@ -284,7 +284,7 @@ form > .home-btn{
     outline: none;
     overflow: hidden;
 }
-.access-input > input:nth-child(1){
+.access-input > input:nth-child(1)::placeholder{
     font-size: .7rem;    
     color: rgb(235, 231, 231);
 }
@@ -436,5 +436,58 @@ footer{
         margin-top: 1.5rem;
     }
 
+    /* ================== bottom content ====================== */
+    .bottom-section{
+        height: 300px;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .access-details{
+        width: 50%;
+        text-align: left;
+    }
+    .access-title{
+        font-size: var(--h1-font-size);
+    }
+    .access-info{
+        width: 88%;
+    }
 
+    .access-input{
+        width: 50%;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .access-input > input{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .access-input > input:nth-child(1){
+        width: 210%;
+        padding: 1rem;
+    }
+    .access-input > input:nth-child(2){
+        padding: 1rem 0.85rem;
+        width: 170px;
+    }
+
+    .access-input > input:nth-child(1)::placeholder{
+        color: var(--neutral-color-gray);
+    }
+    
+    /* ================= footer ================= */
+    .footer-section{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: auto 1fr;
+        column-gap: 3rem;
+        place-items: center;
+        height: 330px;
+    }
+    .footer-links{
+        flex-direction: row;
+        row-gap: 4rem;
+        width: 460px;
+    }
 }
