@@ -482,12 +482,23 @@ footer{
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: auto 1fr;
         column-gap: 3rem;
-        place-items: center;
-        height: 330px;
+        justify-content: baseline;
+        align-items: baseline;
+        height: 350px;
     }
     .footer-links{
         flex-direction: row;
-        row-gap: 4rem;
-        width: 460px;
+        width:100%;
+        justify-content: space-around;
+    }
+
+    .footer-logo{
+        grid-column-start: 1;
+        grid-column-end: 4;
+    }
+    
+    .socials{
+        justify-self: baseline;
+        align-self: baseline;
     }
 }
