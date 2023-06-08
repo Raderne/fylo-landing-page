@@ -8,6 +8,7 @@ This is a solution to the [Fylo landing page with two column layout challenge on
 ### Links
 
 - Solution URL: (https://github.com/Raderne/fylo-landing-page)
+- Link URL : (https://raderne.github.io/fylo-landing-page/)
 
 ## Built with
 
